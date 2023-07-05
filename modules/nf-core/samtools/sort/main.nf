@@ -27,7 +27,7 @@ process SAMTOOLS_SORT {
     samtools sort \\
         $args \\
         -@ $task.cpus \\
-        -m ${sort_memory}M \\
+        -m 3072M \\
         -o ${prefix}.bam \\
         -T $prefix \\
         $bam
